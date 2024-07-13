@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:focus {
+  outline: none;
+}
+
+.input-line {
+  transform: scale(0);
+  transform-origin: left;
+  transition: all 0.4s;
+}
+
+.input-class:focus ~ .input-line {
+  transform: scale(1);
+}
+
+.bg-btn {
+  background: rgb(27, 200, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(27, 200, 226, 1) 0%,
+    rgba(217, 26, 246, 1) 100%
+  );
+}
